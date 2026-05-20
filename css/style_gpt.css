@@ -1,0 +1,49 @@
+body {
+    background-color: #f5f7fb;
+  }
+  
+  /* SIDEBAR */
+  
+  .sidebar {
+    min-height: calc(100vh - 56px);
+    background-color: #0d1b2a;
+  }
+  
+  .sidebar .nav-link {
+    color: #dbe4ee;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+  }
+  
+  .sidebar .nav-link:hover,
+  .sidebar .nav-link.active {
+    background-color: #1d4ed8;
+    color: white;
+  }
+  
+  /* CARD GENERICHE */
+  
+  .card-custom {
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+  
+  /* BADGE */
+  
+  .badge-libera {
+    background-color: #d1fae5;
+    color: #047857;
+  }
+  
+  .badge-occupata {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  /* BOTTONI */
+  
+  .btn-custom {
+    border-radius: 10px;
+  }

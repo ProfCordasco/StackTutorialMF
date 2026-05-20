@@ -1,0 +1,16 @@
+.sidebar {
+    min-height: calc(100vh - 56px);
+    background-color: black;
+}
+
+.sidebar .nav-link {
+    margin-bottom: 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+    color: white;
+}
+
+.nav-link.active {
+    background-color: blue;
+    color: white;
+}
