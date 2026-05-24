@@ -14,3 +14,11 @@
     background-color: blue;
     color: white;
 }
+
+.badge-libera {
+    color: green;
+}
+
+.badge-occupata {
+    color: red;
+}

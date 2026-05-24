@@ -1,0 +1,54 @@
+[
+    {
+      "id": 1,
+      "nome": "SafePaw Parco",
+      "zona": "Parco 2 Giugno",
+      "latitudine": 41.1114230,
+      "longitudine": 16.8755400,
+      "temperatura": 24.50,
+      "umidita": 45.00,
+      "stato_animale": 0,
+      "stato_porta": 0,
+      "ultimo_aggiornamento": "2026-05-21 10:32:15",
+      "attiva": 1
+    },
+    {
+      "id": 2,
+      "nome": "SafePaw Stazione",
+      "zona": "Stazione Centrale",
+      "latitudine": 41.1174300,
+      "longitudine": 16.8702100,
+      "temperatura": 28.70,
+      "umidita": 52.00,
+      "stato_animale": 1,
+      "stato_porta": 1,
+      "ultimo_aggiornamento": "2026-05-21 10:35:42",
+      "attiva": 1
+    },
+    {
+      "id": 3,
+      "nome": "SafePaw Lungomare",
+      "zona": "Lungomare",
+      "latitudine": 41.1258900,
+      "longitudine": 16.8743900,
+      "temperatura": 23.80,
+      "umidita": 40.00,
+      "stato_animale": 0,
+      "stato_porta": 0,
+      "ultimo_aggiornamento": "2026-05-21 10:28:07",
+      "attiva": 1
+    },
+    {
+      "id": 4,
+      "nome": "SafePaw Lungomare",
+      "zona": "Lungomare",
+      "latitudine": 41.1258900,
+      "longitudine": 16.8743900,
+      "temperatura": 23.80,
+      "umidita": 40.00,
+      "stato_animale": 0,
+      "stato_porta": 0,
+      "ultimo_aggiornamento": "2026-05-21 10:28:07",
+      "attiva": 1
+    }
+  ]
