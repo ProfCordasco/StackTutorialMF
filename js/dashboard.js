@@ -29,7 +29,7 @@ function caricaCucce() {
       if (risposta.success === true) {
         mostraCucce(risposta.data);
       } else {
-        alert(risposta.errore);
+        alert(risposta.messaggio);
       }
 
     })
