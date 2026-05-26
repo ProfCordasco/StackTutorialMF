@@ -142,6 +142,11 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
           </div>
+
+          <div class="mt-4">
+            <h5>Posizione cuccia</h5>
+            <div id="mappa-cuccia"></div>
+          </div>
   
           <!-- BOTTONI -->
           <div class="mt-4 d-flex gap-2">
@@ -160,6 +165,34 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     `;
+  
+
+    creaMappaCuccia(cuccia);
+  }
+
+  function creaMappaCuccia(cuccia) {
+
+    if (!cuccia.latitudine || !cuccia.longitudine) {
+      return;
+    }
+  
+    const latitudine = parseFloat(cuccia.latitudine);
+    const longitudine = parseFloat(cuccia.longitudine);
+  
+    const mappa = L.map("mappa-cuccia").setView(
+      [latitudine, longitudine],
+      15
+    );
+  
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "© OpenStreetMap"
+    }).addTo(mappa);
+  
+    L.marker([latitudine, longitudine])
+      .addTo(mappa)
+      .bindPopup(cuccia.nome)
+      .openPopup();
   
   }
   
