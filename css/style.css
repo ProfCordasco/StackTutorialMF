@@ -39,3 +39,11 @@
     width: 100%;
     border-radius: 12px;
   }
+
+
+  #mappa-selezione {
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+  }
