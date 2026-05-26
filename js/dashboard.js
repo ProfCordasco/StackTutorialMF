@@ -3,10 +3,33 @@ document.addEventListener("DOMContentLoaded", function (){
 });
 
 function caricaCucce() {
-    getJSON("../dati/cucce.json")
-    .then(function(cucce){
-        console.log(cucce);
-        mostraCucce(cucce);
+    const URL = "https://scuolaapi.altervista.org/BCK/get_cucce.php";
+
+  // Per ora inseriamo qui il session id manualmente.
+  // Dopo la login useremo:
+  // const sessionId = localStorage.getItem("session_id");
+
+  const sessionId = "INSERISCI_QUI_IL_SESSION_ID";
+
+  fetch(URL, {
+    method: "GET",
+    headers: {
+      "X-Session-Id": sessionId
+    }
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (risposta) {
+
+      console.log(risposta);
+
+      if (risposta.success === true) {
+        mostraCucce(risposta.data);
+      } else {
+        alert(risposta.errore);
+      }
+
     })
     .catch(function (errore){
         console.log("errore", errore);

@@ -1,18 +1,24 @@
 .sidebar {
     min-height: calc(100vh - 56px);
-    background-color: black;
+    background-color:#caced1;
 }
 
 .sidebar .nav-link {
     margin-bottom: 8px;
-    border-radius: 8px;
+    border-radius: 8px; 
     transition: 0.2s;
     color: white;
 }
 
 .nav-link.active {
-    background-color: blue;
+    background-color: #F0867D;
     color: white;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #F0867D;
+  color: white;
 }
 
 .badge-libera {
@@ -21,4 +27,8 @@
 
 .badge-occupata {
     color: red;
+}
+
+.cuccia-badge {
+    font-size: larger;
 }
