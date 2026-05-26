@@ -13,11 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const URL = "https://scuolaapi.altervista.org/BCK/get_cuccia.php?id="+id;
     //const URL = "https://scuolaapi.altervista.org/spi/get_cuccia.php?id="+id;
 
-  // Per ora inseriamo qui il session id manualmente.
-  // Dopo la login useremo:
-  // const sessionId = localStorage.getItem("session_id");
-
-  const sessionId = "b0cce685c79fcd2c58ee354fa9d2cd8c2c6ecdebb3ea5a366fe9f84f18f8398f";
+  const sessionId = localStorage.getItem("session_id");
 
   fetch(URL, {
         method: "GET",
@@ -208,11 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const URL = "https://scuolaapi.altervista.org/BCK/comando_porta.php";
     //const URL = "https://scuolaapi.altervista.org/api/comando_porta.php";
 
-    // Per ora inseriamo qui il session id manualmente.
-    // Dopo la login useremo:
-    // const sessionId = localStorage.getItem("session_id");
-
-    const sessionId = "b0cce685c79fcd2c58ee354fa9d2cd8c2c6ecdebb3ea5a366fe9f84f18f8398f";
+    const sessionId = localStorage.getItem("session_id");
 
     fetch(URL, {
         method: "POST",
